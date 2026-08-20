@@ -2,3 +2,27 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .venv/
+*.egg-info/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Downloaded datasets
+data/raw/
+
+# OS files
+.DS_Store
+Thumbs.db
