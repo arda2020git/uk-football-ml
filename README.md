@@ -14,8 +14,24 @@ uk_football/
 ├── notebooks/           # exploratory notebooks, one per experiment if you like
 ├── results/              # one subfolder per experiment: metrics, plots, saved models
 ├── requirements.txt
+├── environment.yml      # mamba/conda environment spec
 └── EXPERIMENTS.md       # the experiment plan (start here)
 ```
+
+## Environment setup (mamba)
+
+```
+mamba env create -f environment.yml
+mamba activate uk-football-ml
+```
+
+This installs Python 3.11 with pandas, numpy, scikit-learn, matplotlib,
+seaborn, statsmodels, requests, and JupyterLab. A Jupyter kernel named
+"Python (uk-football-ml)" is registered so notebooks in `notebooks/` can
+use this environment.
+
+If you'd rather use plain `pip`/`venv`, `requirements.txt` covers the
+same core packages.
 
 ## Getting the data
 
